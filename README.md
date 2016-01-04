@@ -9,7 +9,7 @@ Because I never successed with using [node-openalpr](No https://github.com/netPa
 
 ## Run
 
-* `npm start` or 'pm2 start processes.json'
+* `npm start` or `pm2 start processes.json`
 
 ## Docker support
 
@@ -22,7 +22,7 @@ In the root of the project build and run the project:
 
 ```
 
-POST /plates` with json:
+POST /plates with json:
 {
 	image: (base64 encoded data),
 	country_code: 'eu',
@@ -53,4 +53,4 @@ returns
 ## Test
 
 * `npm test` to test the express app
-* 'node ./test/docker.js' to test the running docker, but you will need to adjust the url/port to your running docker
+* `node ./test/docker.js` to test the running docker, but you will need to adjust the url/port to your running docker
