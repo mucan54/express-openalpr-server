@@ -16,7 +16,8 @@ Because I never successed with using [node-openalpr](No https://github.com/netPa
 In the root of the project build and run the project:
 
 * `docker build -t gerhardsletten/plate-reader-server .`
-* `docker run -p 4500:4500 gerhardsletten/plate-reader-server`
+* `docker run -d -p 4500:4500 gerhardsletten/plate-reader-server`
+* `node test/docker.js` // Rename to your docker-machine ip `docker-machine ip default`
 
 ## Routes
 
