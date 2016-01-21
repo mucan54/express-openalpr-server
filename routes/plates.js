@@ -10,15 +10,20 @@ const exec = require('child_process').exec;
 
 const uploadPath = path.join(__dirname, '../tmp');
 
+const version = "1.0.2"
+
 router.post('/', (req, res, next) => {
+
+
 	const imagedata = req.body.image;
 	const country_code = ( req.body.country_code ) ? validator.escape(req.body.country_code) : 'eu';
 	const pattern_code = ( req.body.pattern_code ) ? '-p ' + validator.escape(req.body.pattern_code)  : '';
 
 	/* Validate input */
-	if( validator.isBase64(imagedata) ) {
+	if( !imagedata || validator.isBase64(imagedata) ) {
 		return res.json({
-			error: 'No image sent'
+			error: 'No image sent',
+      version: version
 		});
 	}
 

@@ -1,9 +1,14 @@
 // test/docker.js
+const url = process.env.URL ? process.env.URL : false;
 const supertest = require('supertest');
-const api = supertest('http://192.168.99.100:4500');
+const api = supertest(url);
 const path = require('path');
 const test = require('tape');
 const base64Img = require('base64-img');
+
+if (!url) {
+  return console.log('Please spesify an url');
+}
 
 test('POST /plates', t => {
 

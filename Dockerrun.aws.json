@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "gerhardsletten/plate-reader-server",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "4500"
+    }
+  ],
+  "Logging": "/var/log/plate-reader-server"
+}
