@@ -7,6 +7,8 @@ Because I never successed with using [node-openalpr](No https://github.com/netPa
 * Install [OpenAlpr](https://github.com/openalpr/openalpr) on the computer/host where you will be running this app.
 * Download / clone repo and run `npm install`
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 ## Run
 
 * `npm start` or `pm2 start processes.json`
