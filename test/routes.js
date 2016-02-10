@@ -30,7 +30,7 @@ test('POST /plates', t => {
           t.end();
         } else {
           t.ok(res.body, 'It should have a response body');
-          t.equals(res.body.plate, 'DP49829', 'It should return a correct plate number');
+          t.equals(res.body.results[0].plate, 'DP49829', 'It should return a correct plate number');
           t.end();
         }
       });
