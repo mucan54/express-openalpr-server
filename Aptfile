@@ -1,1 +1,3 @@
 apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev
+apt-get remove libusb
+apt-get install libusb-dev
